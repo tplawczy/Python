@@ -34,3 +34,4 @@ def main():
 if __name__ == "__main__":
     main()
 i jeszcze jedna zmiana
+i jeszcze jedna...
