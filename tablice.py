@@ -6,32 +6,43 @@
 
 
 
+class Lista:
+    i=0
+    p=0
+    j=0
+    def __new__(self, n):
+        self.n=n
+        list = []
+        for i in range(1,n):
+            list.append(0)
+            return list
 
 
-class Tablice:
-    def __init__(self, pocz ):
-        self.pocz = pocz
-        self.array = self.build_array()
+class Zbiory:
+    Lista
+    def __init__(self, Lista):
+        self.Lista = Lista
 
-    def Tablice(self, pocz):
-        var = len(tablica) = [4]
-        if pocz:
-           return tablica[0]=self.pocz
-        else
-
-
+    def wygenerujKolejny(self, Lista):
+        Lista.i += 1
+        Lista.p = 1
+        Lista.j = Lista.i
+        while Lista.j % 2 == 0
 
 
 
-        tablica = [4]
-        tablicasafadfasdf
-        return tablica
-to jest moja zmiana
+
+
+
+
+
+
+
+
+
 
 def main():
 
 
 if __name__ == "__main__":
     main()
-i jeszcze jedna zmiana
-i jeszcze jedna...
