@@ -3,7 +3,21 @@
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
+class Lista():
+    i = 0
+    p = 0
+    j = 0
 
+    def __new__(self, n):
+        self.n = n
+        list = []
+        for i in range(1, self.n):
+            list.append(0)
+        return Lista
+
+    def __init__(self, n):
+        self.n = n
+        Lista(n)
 
 class Zbiory:
     Lista
