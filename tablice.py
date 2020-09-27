@@ -24,7 +24,7 @@ class Zbiory:
         self.Lista = Lista
 
     def wygenerujKolejny(self):
-        while Lista.p > Lista.n:
+        while Lista.p < Lista.n:
             Lista.i += 1
             Lista.p = 1
             Lista.j = Lista.i
@@ -32,7 +32,9 @@ class Zbiory:
                     Lista.j = j / 2
                     Lista.p += 1
             if Lista.p <= Lista.n:
-                Lista[Lista.p] = 1 - Lista[Lista.p]
+                 g=[]
+                 g = 1 - Lista[Lista.p-1]
+                 List[Lista.p-1] = g
             print(Lista)
 
 
