@@ -23,7 +23,7 @@ class Zbiory:
     def __init__(self, Lista):
         self.Lista = Lista
 
-    def wygenerujKolejny(self, Lista):
+    def wygenerujKolejny(self):
         while Lista.p > Lista.n:
             Lista.i += 1
             Lista.p = 1
@@ -33,9 +33,8 @@ class Zbiory:
                     Lista.p += 1
             if Lista.p <= Lista.n:
                 Lista[Lista.p] = 1 - Lista[Lista.p]
+            print(Lista)
 
-    def wyswietl(selfself,Lista):
-        print(Lista)
 
 
 
@@ -51,7 +50,11 @@ class Zbiory:
 
 
 def main():
-l = Lista
+    l = Lista(4)
+    e=Zbiory(l)
+    e.wygenerujKolejny()
+
+
 
 
 if __name__ == "__main__":
