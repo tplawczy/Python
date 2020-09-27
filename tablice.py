@@ -24,10 +24,19 @@ class Zbiory:
         self.Lista = Lista
 
     def wygenerujKolejny(self, Lista):
-        Lista.i += 1
-        Lista.p = 1
-        Lista.j = Lista.i
-        while Lista.j % 2 == 0
+        while Lista.p > Lista.n:
+            Lista.i += 1
+            Lista.p = 1
+            Lista.j = Lista.i
+            while Lista.j % 2 == 0:
+                    Lista.j = j / 2
+                    Lista.p += 1
+            if Lista.p <= Lista.n:
+                Lista[Lista.p] = 1 - Lista[Lista.p]
+
+    def wyswietl(selfself,Lista):
+        print(Lista)
+
 
 
 
@@ -42,6 +51,7 @@ class Zbiory:
 
 
 def main():
+l = Lista
 
 
 if __name__ == "__main__":
