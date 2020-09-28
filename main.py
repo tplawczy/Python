@@ -2,53 +2,53 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-# nowy rfr test1 test 2
-class Lista():
-    i =0
-    p =0
-    j =0
-    list=[]
 
-    def __new__(self, n):
-        self.n = n
-        for i in range(1, self.n+1):
-            self.list.append(0)
-        return Lista
-
-    def __init__(self, n):
-        self.n = n
-        Lista(n)
-        
-class Zbiory:
-    Lista
-
-    def __init__(self, Lista):
-        self.Lista = Lista
-
-    def wygenerujKolejny(self, Lista):
-        while Lista.p <= Lista.n:
-            print(Lista.list)
-            Lista.i += 1
-            Lista.p = 1
-            Lista.j = Lista.i
-            while Lista.j % 2 == 0:
-                Lista.j = Lista.j / 2
-                Lista.p = Lista.p + 1
-            if Lista.p <= Lista.n:
-
-                if Lista.list[(Lista.p)-1] == 0:
-                    Lista.list[(Lista.p)-1] = 1
-                else:
-                    Lista.list[(Lista.p)-1] = 0
+# def wykonaj():
+# Use a breakpoint in the code line below to debug your sc
+import array as arr
+import copy
+from typing import Optional, List
 
 
+class Tablice():
+    def __new__(self, pocz1):
+        self.pocz1 = pocz1
 
+        list = []
+        list1 = [(self.pocz1)]
+        list.append(list1)
+
+        for i in range(1, self.pocz1 + 1):
+            var = copy.deepcopy(list1)
+            var.append(self.pocz1 + i)
+            list1 = var
+            list.append(var)
+
+        return list
+
+    def __init__(self, pocz):
+        self.pocz =pocz
+        Tablice(pocz)
 
 def main():
-    l = Lista(4)
-    e = Zbiory(l)
-    e.wygenerujKolejny(l)
+    t = Tablice(3)
+    # print(t[1])
+
+    # print(t[2])
+    for i in t:
+        print(i)
+        if len(i) >= 6:
+            break
+
+    t = Tablice(9)
+    for i in t:
+        print(i)
+        if len(i) >= 7:
+            break
 
 
-if __name__ == "__main__":
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__'"":
     main()
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
