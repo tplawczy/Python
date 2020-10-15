@@ -10,7 +10,7 @@ class Podzbior():
         self.NAST = []
         self.POPRZ = []
 
-    def getIndexNast(selfself, x):
+    def getIndexNast(self, x):
         for i in range(1, len(self.BLOK)):
             if self.BLOK[i] == x:
                 z = i + 1
