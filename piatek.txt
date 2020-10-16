@@ -1,0 +1,47 @@
+
+
+
+
+
+class Network:
+    def __init__(self):
+        self.nodes=[[]]
+        file = open('file.txt')
+
+
+    def wypisz(self, file):
+
+        print(self.file)
+
+
+
+
+
+class Individual:
+    def __init__(self, Network):
+        genom = []
+
+    def generate(self, genom):
+        genom.append(1)
+
+
+
+
+class Population:
+    def __init__(self):
+        var='rty'
+
+
+def dyplom():
+    c=Network()
+    c.wypisz()
+
+
+
+# Press the green button in the gutter to run the script.
+if __name__ == '__main__':
+    dyplom()
+
+# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
