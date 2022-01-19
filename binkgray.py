@@ -1,8 +1,5 @@
 # This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-# nowy rfr test1 test 2
+# Binarny kod greya
 class Lista():
     i =0
     p =0
